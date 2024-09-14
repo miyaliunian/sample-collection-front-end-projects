@@ -1,0 +1,12 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "dev:css-store-house": "lerna run serve --parallel --scope=css-store-house",
+    "dev:vite-vue3-frame": "lerna run serve --parallel --scope=vite-vue3-frame",
+    "build:css-store-house": "lerna run build --parallel --scope=css-store-house"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}

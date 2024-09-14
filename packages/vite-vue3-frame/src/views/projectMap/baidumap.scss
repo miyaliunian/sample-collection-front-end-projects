@@ -1,0 +1,184 @@
+﻿#map {
+    margin: 10px 0;
+    width: 100%;
+    height: 100%;
+}
+
+.BMap_bubble_pop {
+    padding: 0;
+    border: 0;
+}
+
+.baidumapmodal {
+    /* border: 1px solid red; */
+    width: 339px;
+    font-size: 14px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.baidumapmodal .header {
+    // background-color: #1961AC;
+    background: linear-gradient(to right, #6875E8, #1961AC);
+    height: 68px;
+    color: #fff;
+}
+
+.baidumapmodal .header .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 10px 10px 20px;
+}
+
+.baidumapmodal .header .row .cell:nth-child(2) div:nth-child(2) {
+    color: #c8c9cc;
+}
+
+.baidumapmodal .header .row .cell {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.baidumapmodal .header .row .cell:last-child {
+    align-items: flex-end;
+}
+
+.baidumapmodal .header .row .cell:last-child div:first-child span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.baidumapmodal .header .row .cell:last-child .innercell:first-child span::before {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.baidumapmodal .header .row .cell:last-child div:last-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.baidumapmodal .header img {
+    width: 40px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+}
+
+.baidumapmodal .card {
+    margin: 0 10px;
+    padding: 15px;
+    border-radius: 8px;
+    /* border: 1px solid rgb(216, 216, 216); */
+    box-shadow: 0px 0px 8px rgb(0 0 0 / 15%);
+    background-color: #fff;
+    margin-top: -18px;
+}
+
+.baidumapmodal .card .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.baidumapmodal .card .row .cell {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.baidumapmodal .card .row:first-child {
+    justify-content: space-between;
+}
+
+.baidumapmodal .card .row:first-child .cell div {
+    padding: 3px 0;
+}
+
+.baidumapmodal .card .row:first-child .cell div:nth-child(2) b {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1961AC;
+    padding-right: 5px;
+}
+
+.baidumapmodal .card .row:first-child .cell div:nth-child(2) span {
+    font-size: 15px;
+    color: #1961AC;
+}
+
+.baidumapmodal .card .row:first-child .cell div:nth-child(3) {
+    font-size: 12px;
+    color: #c8c9cc;
+}
+
+.baidumapmodal .card .row:nth-child(2) {
+    border-bottom: 1px solid #ebedf0;
+    margin: 10px 0;
+}
+
+.baidumapmodal .card .row:nth-child(3) .cell:nth-child(2) {
+    border-left: 1px solid #ebedf0;
+}
+
+.baidumapmodal .card .row:nth-child(3) .cell {
+    flex-direction: row;
+    align-items: baseline;
+    font-size: 12px;
+    color: #c8c9cc;
+}
+
+.baidumapmodal .card .row:nth-child(3) .cell span {
+    margin-left: 10px;
+    color: #000;
+}
+
+.baidumapmodal .body {
+    padding: 10px 20pt;
+}
+
+.baidumapmodal .body .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+.baidumapmodal .body .row span {
+    color: #c8c9cc;
+    margin-top: 5px;
+}
+
+.baidumapmodal .body .row .cell {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.baidumapmodal .body .row .cell {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.baidumapmodal .body .row .cell:first-child {
+    color: #c8c9cc;
+    padding-right: 10px;
+}
+
+.baidumapmodal .body .row:last-child {
+    padding-top: 20px;
+}
+
+.baidumapmodal .body .row button {
+    border-radius: 2px;
+}

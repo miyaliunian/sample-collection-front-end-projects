@@ -1,0 +1,337 @@
+.project {
+  width: 100%;
+  background-color: #eff2f9;
+  // 测试高度
+  height: auto;
+  padding-bottom: 10vh;
+
+  &-btn-select {
+    width: 96px;
+    height: auto;
+    border-radius: 24px;
+    opacity: 1;
+    border: 1px solid #cad0db;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 12px;
+
+    &-icon {
+      width: 0px;
+      height: 0px;
+      border: 9px solid transparent;
+      border-top-color: #4e5769;
+      margin-top: 4.5px;
+    }
+
+    &-title {
+      font-size: 14px;
+      font-weight: 400;
+      color: #4e5769;
+      line-height: 16px;
+    }
+  }
+
+  &-header {
+    width: 100%;
+    height: 197px;
+    background: url(../../assets/img/project-header-bg.png) no-repeat;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-position: center 0;
+
+    &_row_one {
+      display: flex;
+      flex-direction: row;
+      padding: 16px 12px 20px 12px;
+      justify-content: space-between;
+      align-items: center;
+
+      &_left_title {
+        font-size: 20px;
+        color: white;
+        font-weight: 500;
+        line-height: 28px;
+        padding: 4px 0;
+        width: 70vw;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      &_left_code {
+        font-size: 13px;
+        color: white;
+        opacity: 0.6;
+        font-weight: 400;
+        line-height: 15px;
+        padding: 2px 0;
+      }
+
+      &_right {
+        color: white;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+
+        & a {
+          color: inherit;
+        }
+      }
+    }
+
+    &_row_two {
+      padding: 0 12px;
+
+      &_inner {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 3px 0;
+
+        &_title {
+          font-size: 13px;
+          font-weight: 400;
+          color: #ffffff;
+          line-height: 15px;
+          opacity: 0.9;
+        }
+
+        &_con {
+          margin-left: 16px;
+          width: 56vw;
+          font-size: 13px;
+          font-weight: 500;
+          color: #ffffff;
+          line-height: 15px;
+        }
+      }
+    }
+  }
+
+  &-card {
+    position: absolute;
+    width: 100vw;
+    height: 70px;
+    z-index: 100;
+    margin-top: -35px;
+    display: flex;
+    flex-direction: row;
+    padding: 0 12px;
+    box-sizing: border-box;
+
+    &-machine {
+      background-color: #fa8b60;
+      width: calc(50vw - 18px);
+      margin-right: 8px;
+      border-radius: 8px;
+      padding: 11px 12px;
+
+      img {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+      }
+    }
+
+    &-map {
+      background-color: #50d6d6;
+      width: calc(50vw - 18px);
+      border-radius: 8px;
+      padding: 11px 12px;
+
+      img {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+      }
+    }
+
+    &-title {
+      font-size: 14px;
+      font-weight: 400;
+      color: #ffffff;
+      line-height: 22px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      & a {
+        color: inherit;
+      }
+    }
+
+    &-num {
+      font-size: 24px;
+      font-weight: 500;
+      color: #ffffff;
+      line-height: 32px;
+      margin-left: 28px;
+    }
+  }
+
+  &-card-tab {
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: calc(100% - 24px);
+    margin: 0 12px;
+    margin-top: 42px;
+    padding: 8px 0;
+
+    &-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      div:nth-child(1) {
+        font-size: 24px;
+        font-weight: 500;
+        color: #333333;
+        line-height: 32px;
+      }
+
+      div:nth-child(2) {
+        font-size: 14px;
+        font-weight: 400;
+        color: #333333;
+        line-height: 22px;
+      }
+    }
+  }
+
+  &-card-oil {
+    background-color: white;
+    border-radius: 8px;
+    margin: 0 12px;
+    margin-top: 12px;
+    padding: 16px 12px;
+
+    &-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+
+      &-title {
+        font-size: 16px;
+        font-weight: 600;
+        color: #1e2228;
+        line-height: 19px;
+      }
+    }
+    &-remark {
+      font-size: 12px;
+      margin-left: 16px;
+      &-sign {
+        color: #1961ac;
+      }
+    }
+  }
+
+  &-card-warning {
+    background-color: white;
+    border-radius: 8px;
+    width: calc(100% - 24px);
+    margin: 0 12px;
+    margin-top: 12px;
+
+    &-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      background: linear-gradient(
+        180deg,
+        rgba(255, 167, 167, 0.1) 0%,
+        rgba(255, 238, 238, 0) 100%
+      );
+      padding: 16px 12px 0 12px;
+
+      &-tab {
+        display: flex;
+        flex-direction: row;
+        font-size: 16px;
+        font-weight: 500;
+        color: #4e5769;
+        line-height: 19px;
+
+        div:nth-child(1) {
+          margin-right: 20px;
+        }
+
+        &-active {
+          color: #da3333;
+          border-bottom: 3px solid #da3333;
+          padding-bottom: 12px;
+        }
+      }
+
+      &-all {
+        font-size: 14px;
+        font-weight: 400;
+        color: #4e5769;
+        line-height: 16px;
+        margin-top: -14px;
+      }
+    }
+
+    &-body {
+      padding: 16px 12px;
+
+      &-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: linear-gradient(
+          90deg,
+          #fff0f0 0%,
+          rgba(255, 242, 242, 0) 100%
+        );
+        border-radius: 12px;
+        padding: 14px 12px;
+        margin-top: 8px;
+
+        &-point {
+          width: 6px;
+          height: 6px;
+          background: #da3333;
+          opacity: 1;
+          border-radius: 50%;
+        }
+
+        &-con {
+          margin-top: -12px;
+          margin-left: 16px;
+
+          div:nth-child(1) {
+            font-size: 15px;
+            font-weight: 400;
+            color: #1e2228;
+            line-height: 22px;
+          }
+
+          div:nth-child(2) {
+            font-size: 13px;
+            font-weight: 400;
+            color: #a6aebd;
+            line-height: 15px;
+            margin-top: 6px;
+          }
+        }
+
+        &-time {
+          font-size: 14px;
+          font-weight: 400;
+          color: #828b9b;
+          line-height: 22px;
+          margin-top: -9px;
+        }
+      }
+    }
+  }
+}

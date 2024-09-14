@@ -1,0 +1,125 @@
+.machine-list {
+  background-color: #eff2f9;
+  min-height: 100vh;
+  .panel-box {
+    @mixin box {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-weight: 400;
+    }
+    &-run {
+      @include box;
+      color: #1961ac;
+    }
+    &-stop {
+      @include box;
+      color: #edb524;
+    }
+    &-desc{
+      padding-top: 1px;
+    }
+  }
+  .panel-point {
+    @mixin point {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      margin-right: 4px;
+    }
+    &-run {
+      @include point;
+      background-color: #1961ac;
+    }
+    &-stop {
+      @include point;
+      background-color: #edb524;
+    }
+  }
+  &-card {
+    margin: 12px 12px 0 12px;
+    padding: 12px;
+    width: calc(100% - 48px);
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    font-size: 14px;
+    &-img {
+      img {
+        width: 76px;
+        height: 76px;
+        border-radius: 4px;
+      }
+    }
+    &-con {
+      height: 100%;
+      margin-left: 12px;
+      &-desc {
+        &-sign {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          &-title {
+            div:nth-child(1) {
+              font-size: 16px;
+              font-weight: 600;
+              color: #1e2228;
+              line-height: 19px;
+              padding: 1px 0;
+              margin-bottom: 4px;
+            }
+            div:nth-child(2) {
+              font-size: 12px;
+              font-weight: 400;
+              color: #666666;
+              line-height: 14px;
+              padding: 1px 0;
+            }
+          }
+          &-run {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: auto;
+            height: 20px;
+            background: rgba(25, 97, 172, 0.1);
+            border-radius: 2px;
+            font-size: 12px;
+            font-weight: 500;
+            color: #1961ac;
+            padding: 4px;
+          }
+        }
+        &-box {
+          margin-top: 4px;
+          &-row {
+            font-size: 14px;
+            color: #999999;
+            padding: 1px 0;
+            margin-top: 4px;
+            span:first-child {
+              margin-right: 8px;
+            }
+          }
+        }
+      }
+      &-panel {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid #e4e7ed;
+        width: 231px;
+        font-size: 14px;
+        color: #333333;
+        margin-top: 12px;
+        padding-top: 12px;
+        &-line {
+          height: 16px;
+          width: 1px;
+          background-color: #e4e7ed;
+        }
+      }
+    }
+  }
+}
